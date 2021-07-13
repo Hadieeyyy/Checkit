@@ -27,9 +27,15 @@ class _SplashScrinState extends State<SplashScrin> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 5,
+      seconds: 6,
       navigateAfterSeconds: OnboardingPage(),
       image: Image.asset('assets/checkitstorelogo.png'),
+      title: Text("PJT 112 Zuri Project",
+      style: TextStyle(
+        fontSize: 20.0,
+        color: Colors.redAccent,
+        fontWeight: FontWeight.bold,
+      )),
       photoSize: 100.0,
       loaderColor: Colors.red,
     );
