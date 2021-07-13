@@ -27,7 +27,7 @@ class _SplashScrinState extends State<SplashScrin> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 6,
+      seconds: 7,
       navigateAfterSeconds: OnboardingPage(),
       image: Image.asset('assets/checkitstorelogo.png'),
       title: Text("PJT 112 Zuri Project",
