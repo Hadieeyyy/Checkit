@@ -1,8 +1,8 @@
 
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'dart:convert';
+//import 'package:flutter/foundation.dart';
+//import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'albums.dart';
@@ -10,13 +10,33 @@ import 'utils/functions.dart';
 import 'searchpage.dart';
 import 'categorypage.dart';
 import 'selectpage.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 //import 'package:http/http.dart' as http;
 
 void main() {
-  runApp(MyApp());
+  runApp(new MaterialApp(home: SplashScrin()));
 }
 
+class SplashScrin extends StatefulWidget {
+  @override
+  _SplashScrinState createState() => _SplashScrinState();
+}
+
+class _SplashScrinState extends State<SplashScrin> {
+  @override
+  Widget build(BuildContext context) {
+    return SplashScreen(
+      seconds: 5,
+      navigateAfterSeconds: OnboardingPage(),
+      image: Image.asset('assets/checkitstorelogo.png'),
+      photoSize: 100.0,
+      loaderColor: Colors.red,
+    );
+  }
+}
+
+//-----------------------
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
