@@ -343,6 +343,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('CheckIT'),
+        backgroundColor:Colors.redAccent,
         centerTitle: true,
       ),
 
